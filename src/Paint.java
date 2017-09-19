@@ -18,9 +18,9 @@ public class Paint {
     /**
      * Primary paint method that does all the calculations
      * @param {Buffer} args
+     * @return {Void}
      */
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int length, width, height, door, window;
         double totalSqFt, paintNeeded;
 
@@ -36,6 +36,11 @@ public class Paint {
         System.out.println("Total gallons of paint needed: " + (int) Math.ceil(paintNeeded) + " gallons.");
     }
 
+    /**
+     * Prompt user to enter an integer based on the question, and loop until integer only.
+     * @param {Buffer} question
+     * @return {Integer} User input
+     */
     private static int PromptInput(String question)
     {
         System.out.print(question);
