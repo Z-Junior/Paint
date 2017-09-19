@@ -31,14 +31,19 @@ public class Paint {
         window = PromptInput("Amount of windows in the room: ");
 
         totalSqFt = (((width * height) * 2) + ((length * height) * 2)) - ((door * DOOR_COVERAGE) + (window * WINDOW_COVERAGE));
+        paintNeeded = totalSqFt / PAINT_COVERAGE;
+
+        System.out.println("Total gallons of paint needed: " + (int) Math.ceil(paintNeeded) + " gallons.");
     }
 
     private static int PromptInput(String question)
     {
+        System.out.print(question);
+
         while (!SCAN.hasNextInt()) {
             System.out.flush();
 
-            System.out.print(question);
+            System.out.print("Whole number only: ");
 
             SCAN.next();
         }
