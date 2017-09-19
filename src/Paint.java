@@ -54,7 +54,8 @@ public class Paint
     {
         System.out.print(question);
 
-        while (!SCAN.hasNextInt()) {
+        while (!SCAN.hasNextInt())
+        {
             System.out.flush();
 
             System.out.print("Whole number only: ");
