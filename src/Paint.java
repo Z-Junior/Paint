@@ -15,6 +15,10 @@ public class Paint {
     private final static Scanner SCAN = new Scanner(System.in);
 
 
+    /**
+     * Primary paint method that does all the calculations
+     * @param {Buffer} args
+     */
     public static void main(String[] args)
     {
         int length, width, height, door, window;
